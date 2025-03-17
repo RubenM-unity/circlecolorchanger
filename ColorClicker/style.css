@@ -1,0 +1,101 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    background-color: #343434; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #404040; /* Darker green on hover */
+  }
+  
+  
+  /* Sidebar styling */
+  #sidebar {
+    width: 250px;
+    background-color: #676867;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0; /* Move sidebar to the right */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #sidebar p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    outline: none;
+  }
+  
+  .target-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  #score-display {
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    font-size: 24px;
+    font-weight: bold;
+    color:#343434;
+}
+
+/* Ensure game container is centered properly */
+#game-container {
+    position: relative; /* Allows absolute positioning for child elements */
+    margin-left: 270px; /* Keep space for sidebar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.warning {
+  color: #f52f57;
+}

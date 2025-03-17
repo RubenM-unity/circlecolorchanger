@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Clicker!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="sidebar">
+    <h2>Color Clicker</h2>
+    <p>Get points from clicking the circle!</p>
+    <p><strong>Instructions:</strong> Click on the circle to change its color.
+      Extra Score starts off at 10 points and Score Multiplier starts off at 100, however, every time you buy one the price is multiplied by 2.5
+      <br> <br>    
+      Tip: You can also press enter or space to activate the circle</p>
+    <!--
+    <br>
+    <div id="target-circle" class="target-circle"></div>
+    <p>Target Color</p>
+    -->
+    <p class="warning">⬇ Epilepsy Warning!</p>
+    <br>
+    <button id="crazyModeButton" onclick="enableCrazyMode()" style="font-size: 14px;" class="crazyModeButton">Enable CRAZY MODE</button>
+    <p>⬆ (Also try pressing z)</p>
+    <div id="stats" style="margin-top: auto;">
+      <p>Items: none 😶</p>
+    </div>
+  </div>
+
+  <div id="game-container">
+    <div id="circle" class="circle" tabindex="0"></div>
+    <p>Click the circle to change its color!</p>
+    <!-- Below, when passing in the argument for the purchaseItem function make sure to put a space at the start of the string and use capitals -->
+    <p id="shop"><button onclick="purchaseItem(' Extra Score')">Buy Extra Score</button> <button onclick="purchaseItem(' Score Multiplier')">Buy Score Multiplier - times an extra 0.1</button></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
